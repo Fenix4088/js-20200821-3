@@ -20,7 +20,9 @@
       const salesData = [ 30, 40, 20, 80, 35, 15 ];
       const customersData = [ 100, 90, 80, 35, 90, 25 ];
 
-      const ordersChart = new ColumnChart(1, 2, [], {});
+      const ordersChart = new ColumnChart({
+        data: ordersData
+      });
 
       const salesChart = new ColumnChart({
         data: salesData,
