@@ -66,8 +66,8 @@ describe('events-practice/double-slider', () => {
     const leftBoundary = doubleSlider.element.querySelector('span[data-element="from"]');
     const rightBoundary = doubleSlider.element.querySelector('span[data-element="to"]');
 
-    expect(leftBoundary).toHaveTextContent("$200");
-    expect(rightBoundary).toHaveTextContent("$400");
+    expect(leftBoundary).toHaveTextContent("$400");
+    expect(rightBoundary).toHaveTextContent("$600");
   });
 
   it('should have ability to move left slider to start boundary', () => {
