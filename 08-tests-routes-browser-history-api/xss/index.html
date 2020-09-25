@@ -20,13 +20,13 @@
         const element = document.createElement('div');
 
         element.innerHTML = `
-        <div>
-          <h2>${this.data.title}</h2>
-          <div>${this.data.description}</div>
           <div>
-            <img src="${this.data.images[0].url}" alt="${this.data.images[0].source}">
+            <h2>${this.data.title}</h2>
+            <div>${this.data.description}</div>
+            <div>
+              <img src="${this.data.images[0].url}" alt="${this.data.images[0].source}">
+            </div>
           </div>
-        </div>
       `;
 
         this.element = element.firstElementChild;
